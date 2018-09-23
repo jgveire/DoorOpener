@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <button type="submit" class="button__open">Open</button>
+    @Html.ValidationSummary(true, "", new { @class = "validation__summary" })
+}
